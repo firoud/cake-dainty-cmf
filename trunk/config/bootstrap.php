@@ -17,12 +17,12 @@
 Configure::write('Engine.name', 'Dainty CMF');
 Configure::write('Engine.version', '1.0.0');
 
+Configure::load('project');
+
 // FirePHP
 if (App::import('Vendor', 'FirePHP', array('file' => 'FirePHP' . DS . 'fb.php'))) {
-	FB::setEnabled(TRUE);
+	FB::setEnabled((bool)Configure::read('debug'));
 }
-
-Configure::load('project');
 
 
 ?>
