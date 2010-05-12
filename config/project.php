@@ -14,8 +14,11 @@
 */
 
 
-Configure::write('Project.name', 'Unnamed');
-Configure::write('Project.version', '1.0.0');
+$config['Project']['name'] = 'Unnamed';
+$config['Project']['version'] = '1.0.0';
+
+$config['debug'] = 2;
+$config['log'] = TRUE;
 
 
 ?>
