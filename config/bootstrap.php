@@ -22,7 +22,6 @@ if (App::import('Vendor', 'FirePHP', array('file' => 'FirePHP' . DS . 'fb.php'))
 	FB::setEnabled(TRUE);
 }
 
-// project config
 Configure::load('project');
 
 
