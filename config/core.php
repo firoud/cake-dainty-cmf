@@ -14,9 +14,6 @@
 */
 
 
-Configure::write('Engine.name', 'Dainty CMF');
-Configure::write('Engine.version', '1.0.0');
-
 Configure::write('debug', 0);
 Configure::write('log', TRUE);
 
