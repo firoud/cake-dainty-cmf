@@ -14,4 +14,8 @@
 */
 
 
+Configure::write('Project.name', 'Unnamed');
+Configure::write('Project.version', '1.0.0');
+
+
 ?>
