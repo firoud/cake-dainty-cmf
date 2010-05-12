@@ -24,7 +24,7 @@ var $default = array(
 	'password' => 'password',
 	'database' => 'database_name',
 	'prefix' => '',
-	'encoding' => 'utf8'
+	'encoding' => 'utf8' // important
 );
 
 }
