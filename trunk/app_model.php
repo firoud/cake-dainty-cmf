@@ -19,4 +19,7 @@ class AppModel extends Model {
 }
 
 
+App::import('Model', 'AppProjectModel');
+
+
 ?>

@@ -19,4 +19,7 @@ class AppController extends Controller {
 }
 
 
+App::import('Controller', 'AppProject');
+
+
 ?>
