@@ -27,6 +27,17 @@ var $default = array(
 	'encoding' => 'utf8' // important
 );
 
+var $admin = array(
+	'driver' => 'mysql',
+	'persistent' => FALSE,
+	'host' => 'localhost',
+	'login' => 'user',
+	'password' => 'password',
+	'database' => 'database_name',
+	'prefix' => 'admin_',
+	'encoding' => 'utf8' // important
+);
+
 }
 
 
