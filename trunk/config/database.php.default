@@ -34,7 +34,7 @@ var $admin = array(
 	'login' => 'user',
 	'password' => 'password',
 	'database' => 'database_name',
-	'prefix' => 'admin_',
+	'prefix' => 'x_',
 	'encoding' => 'utf8' // important
 );
 
