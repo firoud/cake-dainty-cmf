@@ -45,7 +45,7 @@ Configure::write('Security.cipherSeed', '76859309657453542496749683645');
 //Configure::write('Asset.filter.js', 'custom_javascript_output_filter.php');
 
 Configure::write('Acl.classname', 'DbAcl');
-Configure::write('Acl.database', 'default');
+Configure::write('Acl.database', 'admin');
 
 if (function_exists('date_default_timezone_set')) {
 	date_default_timezone_set('Europe/Moscow'); // php 5.3
