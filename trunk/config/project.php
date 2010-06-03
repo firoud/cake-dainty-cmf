@@ -14,7 +14,7 @@
 */
 
 
-$config['Project']['name'] = 'Unnamed';
+$config['Project']['name'] = 'Unnamed Project';
 $config['Project']['version'] = '1.0.0';
 
 $config['debug'] = 2;
