@@ -5,8 +5,8 @@
 * CakePHP Dainty CMF
 * http://cake-dainty-cmf.googlecode.com
 *
-* @package cake
-* @subpackage cake.app.controllers
+* @package dainty
+* @subpackage dainty.controllers
 * @author Ivan Chistyakov <zetruger@gmail.com>
 * @version $Id$
 * @link $HeadURL$
@@ -15,6 +15,15 @@
 
 
 class PagesController extends AppProjectController {
+
+var $name = 'Pages';
+
+var $uses = array();
+
+function mainpage() {
+    $this->layout = 'project_mainpage';
+    // empty
+}
 
 }
 
