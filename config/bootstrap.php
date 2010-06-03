@@ -14,7 +14,7 @@
 */
 
 
-Configure::write('Engine.name', 'Dainty CMF');
+Configure::write('Engine.name', 'CakePHP Dainty CMF');
 Configure::write('Engine.version', '1.0.0');
 
 Configure::load('project');
