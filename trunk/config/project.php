@@ -20,5 +20,7 @@ $config['Project']['version'] = '1.0.0';
 $config['debug'] = 2;
 $config['log'] = TRUE;
 
+//define('DEFAULT_LANGUAGE', 'rus');
+
 
 ?>
