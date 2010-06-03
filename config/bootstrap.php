@@ -5,8 +5,8 @@
 * CakePHP Dainty CMF
 * http://cake-dainty-cmf.googlecode.com
 *
-* @package cake
-* @subpackage cake.app.config
+* @package dainty
+* @subpackage dainty.config
 * @author Ivan Chistyakov <zetruger@gmail.com>
 * @version $Id$
 * @link $HeadURL$
