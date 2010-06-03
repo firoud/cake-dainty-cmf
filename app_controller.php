@@ -16,6 +16,10 @@
 
 class AppController extends Controller {
 
+var $components = array('Session', 'RequestHandler', 'DebugKit.Toolbar');
+
+var $helpers = array('Session', 'Html', 'Form');
+
 }
 
 
