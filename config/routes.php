@@ -14,6 +14,10 @@
 */
 
 
+Router::connect('/phpinfo', array('plugin' => 'routines', 'controller' => 'routines', 'action' => 'phpinfo'));
+Router::connect('/captcha', array('plugin' => 'routines', 'controller' => 'routines', 'action' => 'kcaptcha'));
+
+
 Router::connect('/', array('controller' => 'pages', 'action' => 'mainpage'));
 
 //Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
