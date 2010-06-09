@@ -1,6 +1,6 @@
-<?php echo $html->docType('xhtml-strict'); ?>
+<?php echo $this->Html->docType('xhtml-strict'); ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<?php echo $html->tag('head', $this->element('layout_project' . DS . 'head_content')); ?>
+<?php echo $this->Html->tag('head', $this->element('layout_project' . DS . 'head_content', array('scripts_for_layout' => $scripts_for_layout))); ?>
 <body>
 
 <?php echo $this->element('layout_project' . DS . 'header'); ?>
