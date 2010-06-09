@@ -20,6 +20,13 @@ var $components = array('Session', 'RequestHandler', 'DebugKit.Toolbar');
 
 var $helpers = array('Session', 'Html', 'Form');
 
+function _disableAll() {
+	Configure::write('debug', 0);
+	$this->disableCache();
+	$this->autoRender = FALSE;
+	@ob_clean();
+}
+
 }
 
 
