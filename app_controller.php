@@ -29,6 +29,21 @@ function _disableAll() {
 	@ob_clean();
 }
 
+function _setLanguage($lang = NULL) {
+	if (is_null($lang) && isset($this->params['named']['lang'])) {
+		$lang = $this->params['named']['lang'];
+	}
+	$l10n = new L10n();
+	$l10n->get($lang);
+	Configure::write('Config.language', $l10n->locale);
+	$this->set(array('locale' => $l10n->locale, 'lang' => $l10n->lang, 'l10n' => $l10n->catalog($l10n->lang)));
+}
+
+function beforeFilter() {
+	parent::beforeFilter();
+	$this->_setLanguage();
+}
+
 }
 
 
