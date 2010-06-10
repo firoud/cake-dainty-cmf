@@ -30,8 +30,8 @@ function _disableAll() {
 }
 
 function _setLanguage($lang = NULL) {
-	if (is_null($lang) && isset($this->params['named']['lang'])) {
-		$lang = $this->params['named']['lang'];
+	if (is_null($lang) && isset($this->params['lang'])) {
+		$lang = $this->params['lang'];
 	}
 	$l10n = new L10n();
 	$l10n->get($lang);
