@@ -17,7 +17,7 @@
 Router::connect('/phpinfo', array('plugin' => 'routines', 'controller' => 'routines', 'action' => 'phpinfo'));
 Router::connect('/captcha', array('plugin' => 'routines', 'controller' => 'routines', 'action' => 'kcaptcha'));
 
-Router::connect('/:lang', array('controller' => 'pages', 'action' => 'mainpage'), array('persist' => array('lang')));
+Router::connect('/:lang', array('controller' => 'pages', 'action' => 'mainpage'), array('persist' => array('lang'), 'lang' => '[a-z]{2,3}'));
 Router::connect('/', array('controller' => 'pages', 'action' => 'mainpage'));
 
 //Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
