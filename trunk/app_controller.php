@@ -22,6 +22,11 @@ var $helpers = array('Session', 'Html', 'Form');
 
 var $layout = 'project';
 
+function __mergeVars() {
+	// ???
+	parent::__mergeVars();
+}
+
 function _disableAll() {
 	Configure::write('debug', 0);
 	$this->disableCache();
