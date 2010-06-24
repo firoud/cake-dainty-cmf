@@ -19,6 +19,7 @@ $config['Project']['version'] = '1.0.0';
 
 $config['debug'] = 2;
 $config['log'] = TRUE;
+$config['fb'] = TRUE;
 
 //define('DEFAULT_LANGUAGE', 'rus');
 
