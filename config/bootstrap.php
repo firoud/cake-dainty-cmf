@@ -62,7 +62,9 @@ Configure::load('project');
 if (!defined('DEFAULT_LANGUAGE')) {
 	define('DEFAULT_LANGUAGE', 'rus');
 }
-Configure::write('Config.language', DEFAULT_LANGUAGE);
+if (Configure::read('Config.language') === NULL) {
+	Configure::write('Config.language', DEFAULT_LANGUAGE);
+}
 
 
 ?>
