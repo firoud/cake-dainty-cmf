@@ -17,7 +17,32 @@
 Configure::write('Engine.name', 'CakePHP Dainty CMF');
 Configure::write('Engine.version', '1.0.0');
 
+// Firebug (FirePHP / FireCake)
 Configure::write('fb', TRUE);
+
+if (!function_exists('fb')) {
+	function fb() {
+		if ((bool)Configure::read('debug') && Configure::read('fb')) {
+			if (!class_exists('FirePHP') && !class_exists('FireCake')) {
+				App::import('Vendor', 'FirePHP', array('file' => 'FirePHP' . DS . 'FirePHP.class.php')) or App::import('Vendor', 'DebugKit.FireCake');
+			}
+			if (func_num_args() == 0) {
+				$args = array('Test', 'FirePHP', 'info');
+			} else {
+				$args = func_get_args();
+			}
+			if (class_exists('FirePHP')) {
+				$instance = FirePHP::getInstance(TRUE);
+				return call_user_func_array(array($instance, 'fb'), $args);
+			} elseif (class_exists('FireCake')) {
+				return call_user_func_array(array('FireCake', 'fb'), $args);
+			} elseif (func_num_args() > 0) {
+				trigger_error(__('FirePHP could not be loaded', TRUE), E_USER_NOTICE);
+			}
+		}
+		return FALSE;
+	}
+}
 
 // gost 7.79 system b (russian)
 Inflector::rules('transliteration', array(
