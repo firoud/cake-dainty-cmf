@@ -17,6 +17,8 @@
 Configure::write('Engine.name', 'CakePHP Dainty CMF');
 Configure::write('Engine.version', '1.0.0');
 
+Configure::write('fb', TRUE);
+
 // gost 7.79 system b (russian)
 Inflector::rules('transliteration', array(
 	'/а/' => 'a', '/б/' => 'b', '/в/' => 'v', '/г/' => 'g', '/д/' => 'd', '/е/' => 'e', '/ё/' => 'yo', '/ж/' => 'zh', '/з/' => 'z', '/и/' => 'i', '/й/' => 'j',
@@ -30,11 +32,6 @@ Inflector::rules('transliteration', array(
 
 // project config
 Configure::load('project');
-
-// FirePHP
-if (App::import('Vendor', 'FirePHP', array('file' => 'FirePHP' . DS . 'fb.php'))) {
-	FB::setEnabled((bool)Configure::read('debug'));
-}
 
 // language
 if (!defined('DEFAULT_LANGUAGE')) {
