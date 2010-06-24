@@ -18,10 +18,11 @@ $config['Project']['name'] = 'Unnamed Project';
 $config['Project']['version'] = '1.0.0';
 
 $config['debug'] = 2;
-$config['log'] = TRUE;
-$config['fb'] = TRUE;
+//$config['log'] = TRUE;
+//$config['fb'] = TRUE;
 
 //define('DEFAULT_LANGUAGE', 'rus');
+//$config['Config']['language'] = 'rus';
 
 
 ?>
