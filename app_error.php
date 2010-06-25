@@ -17,8 +17,8 @@
 class AppError extends ErrorHandler {
 
 function _outputMessage($template) {
-    $this->controller->layout = 'default';
-    parent::_outputMessage($template);
+	$this->controller->layout = 'default';
+	parent::_outputMessage($template);
 }
 
 }
