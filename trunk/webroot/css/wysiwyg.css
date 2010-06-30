@@ -1,0 +1,33 @@
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+.full { text-align: justify; }
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+.strike, del { text-decoration: line-through; }
+
+.xx-small { font-size: xx-small; }
+.x-small { font-size: x-small; }
+.small { font-size: small; }
+.medium { font-size: medium; }
+.large { font-size: large; }
+.x-large { font-size: x-large; }
+.xx-large { font-size: xx-large; }
+
+.float-left { float: left; }
+.float-right { float: right; }
+.clear { clear: both; }
+
+img.left, img.float-left { float: left; margin: 5px 10px 5px 0; }
+img.right, img.float-right { float: right; margin: 5px 0 5px 10px; }
+
+body, td, pre { font-family: Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif; font-size:100%; }
+
+h1 { font-size: 2em }
+h2 { font-size: 1.5em }
+h3 { font-size: 1.17em }
+h4 { font-size: 1em }
+h5 { font-size: .83em }
+h6 { font-size: .75em }
