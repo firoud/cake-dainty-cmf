@@ -3,6 +3,13 @@
 .right { text-align: right; }
 .full { text-align: justify; }
 
+.float-left { float: left; }
+.float-right { float: right; }
+.clear { clear: both; }
+
+img.left, img.float-left { float: left; margin: 5px 10px 5px 0; }
+img.right, img.float-right { float: right; margin: 5px 0 5px 10px; }
+
 .bold { font-weight: bold; }
 .italic { font-style: italic; }
 .underline { text-decoration: underline; }
@@ -16,12 +23,8 @@
 .x-large { font-size: x-large; }
 .xx-large { font-size: xx-large; }
 
-.float-left { float: left; }
-.float-right { float: right; }
-.clear { clear: both; }
-
-img.left, img.float-left { float: left; margin: 5px 10px 5px 0; }
-img.right, img.float-right { float: right; margin: 5px 0 5px 10px; }
+.hidden { opacity: .25; }
+* html .hidden { filter: alpha(opacity=25); zoom: 1; }
 
 body, td, pre { font-family: Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif; font-size:100%; }
 
