@@ -17,7 +17,7 @@
 class AppModel extends Model {
 
 function isAssociable() {
-    return $this->Behaviors->attached('Associable');
+	return $this->Behaviors->attached('Associable');
 }
 
 }
