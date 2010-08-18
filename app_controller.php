@@ -14,7 +14,12 @@
 */
 
 
-class AppController extends Controller {
+if (!App::import('Lib', 'Admin.AdminProxyController')) {
+	class AdminProxyController extends Controller {} // dummy
+}
+
+
+class AppController extends AdminProxyController {
 
 var $components = array('Session', 'RequestHandler', 'DebugKit.Toolbar');
 
