@@ -14,7 +14,12 @@
 */
 
 
-class AppModel extends Model {
+if (!PHP5 || !App::import('Lib', 'LazyModel.LazyModel')) {
+	class LazyModel extends Model {} // dummy
+}
+
+
+class AppModel extends LazyModel {
 
 function isAssociable() {
 	return $this->Behaviors->attached('Associable');
