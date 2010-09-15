@@ -22,7 +22,9 @@ $config['debug'] = 2;
 //$config['fb'] = TRUE;
 
 //define('DEFAULT_LANGUAGE', 'rus');
-//$config['Config']['language'] = 'rus';
+//$config['Config']['language'] = DEFAULT_LANGUAGE;
+
+//$config['Config']['languages'] = array('rus', 'eng', 'deu', 'fre');
 
 
 ?>
