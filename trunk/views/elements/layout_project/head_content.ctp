@@ -6,6 +6,6 @@
 <?php echo $this->Html->css('screen', NULL, array('media' => 'screen')); ?>
 <?php echo $this->Html->css('print', NULL, array('media' => 'print')); ?>
 <!--[if IE]>
-<?php echo $this->Html->css('ie'); ?>
+<?php echo $this->Html->css('ie', NULL, array('media' => 'all')); ?>
 <![endif]-->
 <?php if (isset($scripts_for_layout)) echo $scripts_for_layout; ?>
