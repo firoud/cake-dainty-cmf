@@ -45,6 +45,9 @@ function _setLanguage($lang = NULL) {
 	}
 	$l10n = new L10n();
 	$l10n->get($lang);
+	if (!in_array($l10n->locale, (array)Configure::read('Config.languages')) && defined('DEFAULT_LANGUAGE')) {
+		$l10n->get(DEFAULT_LANGUAGE);
+	}
 	Configure::write('Config.language', $l10n->locale);
 	$this->set(array('locale' => $l10n->locale, 'lang' => $l10n->lang, 'l10n' => $l10n->catalog($l10n->lang)));
 }
