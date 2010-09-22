@@ -21,8 +21,13 @@ if (!PHP5 || !App::import('Lib', 'LazyModel.LazyModel')) {
 
 class AppModel extends LazyModel {
 
-function isAssociable() {
-	return $this->Behaviors->attached('Associable');
+// https://trac.cakephp.org/ticket/2056
+function afterFind($results, $primary = FALSE) {
+	$results = parent::afterFind($results, $primary);
+	if (!$primary && $this->Behaviors->enabled('Uploadable')) {
+		$results = $this->Behaviors->Uploadable->afterFind($this, $results, FALSE);
+	}
+	return $results;
 }
 
 }
