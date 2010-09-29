@@ -15,7 +15,7 @@
 
 
 Configure::write('debug', 0);
-Configure::write('log', TRUE);
+Configure::write('log', FALSE);
 
 Configure::write('App.encoding', 'UTF-8');
 //Configure::write('App.baseUrl', env('SCRIPT_NAME')); // without mod_rewrite
