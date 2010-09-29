@@ -1,4 +1,4 @@
-<?php echo $this->Html->meta(array('http-equiv' => 'X-UA-Compatible', 'content' => 'IE=EmulateIE7'); ?>
+<?php echo $this->Html->meta(array('http-equiv' => 'X-UA-Compatible', 'content' => 'IE=EmulateIE7')); ?>
 <?php echo $this->Html->charset(); ?>
 <title><?php if (isset($title_for_layout)) echo $title_for_layout; ?></title>
 <?php echo $this->Html->meta('icon'); ?>
