@@ -28,6 +28,8 @@ function __construct($options = array()) {
 			$modelVars = get_class_vars($modelClass);
 			if (isset($modelVars['translateTable'])) {
 				$this->tables[$modelVars['translateTable']] = $schemaVars['i18n'];
+			} elseif (isset($modelVars['translateModel'])) {
+				$this->tables[Inflector::tableize($modelVars['translateModel'])] = $schemaVars['i18n'];
 			}
 		}
 	}
