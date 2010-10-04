@@ -14,7 +14,7 @@
 */
 
 
-
+URL::connect('/', array('controller' => 'pages', 'action' => 'mainpage'));
 
 
 ?>
