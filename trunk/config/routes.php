@@ -14,13 +14,12 @@
 */
 
 
-Router::connect('/phpinfo', array('plugin' => 'routines', 'controller' => 'routines', 'action' => 'phpinfo'));
-Router::connect('/captcha', array('plugin' => 'routines', 'controller' => 'routines', 'action' => 'kcaptcha'));
+App::import('Lib', 'Routines.URL');
 
-Router::connect('/:lang', array('controller' => 'pages', 'action' => 'mainpage'), array('persist' => array('lang'), 'lang' => '[a-z]{2,3}'));
-Router::connect('/', array('controller' => 'pages', 'action' => 'mainpage'));
+//URL::connect('/phpinfo', array('plugin' => 'routines', 'controller' => 'routines', 'action' => 'phpinfo'));
+//URL::connect('/captcha', array('plugin' => 'routines', 'controller' => 'routines', 'action' => 'captcha'));
 
-//Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+include(CONFIGS . 'urls.php');
 
 
 ?>
