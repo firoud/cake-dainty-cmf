@@ -14,7 +14,7 @@
 */
 
 
-App::import('Lib', 'Routines.URL');
+App::import('Lib', 'Routines.Url');
 
 //URL::connect('/phpinfo', array('plugin' => 'routines', 'controller' => 'routines', 'action' => 'phpinfo'));
 //URL::connect('/captcha', array('plugin' => 'routines', 'controller' => 'routines', 'action' => 'captcha'));
