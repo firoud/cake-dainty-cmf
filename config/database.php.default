@@ -38,17 +38,6 @@ var $test = array(
 	'encoding' => 'utf8' // important
 );
 
-var $admin = array(
-	'driver' => 'mysql',
-	'persistent' => FALSE,
-	'host' => 'localhost',
-	'login' => 'user',
-	'password' => 'password',
-	'database' => 'admin_database_name',
-	'prefix' => '',
-	'encoding' => 'utf8' // important
-);
-
 }
 
 
