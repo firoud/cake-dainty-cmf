@@ -14,12 +14,12 @@
 */
 
 
-if (!App::import('Lib', 'Admin.AdminProxyController')) {
-	class AdminProxyController extends Controller {} // dummy
+if (!App::import('Lib', 'Admin.AdminMagicController')) {
+	class AdminMagicController extends Controller {} // dummy
 }
 
 
-class AppController extends AdminProxyController {
+class AppController extends AdminMagicController {
 
 var $components = array('Session', 'RequestHandler', 'DebugKit.Toolbar');
 
@@ -27,9 +27,15 @@ var $helpers = array('Session', 'Html', 'Form');
 
 var $layout = 'project';
 
-function __mergeVars() {
-	// ???
-	parent::__mergeVars();
+function constructClasses() {
+	$appVars = get_class_vars('AppProjectController');
+	if (isset($appVars['components'])) {
+		$this->components = Set::merge(Set::normalize($appVars['components']), Set::normalize($this->components));
+	}
+	if (isset($appVars['helpers'])) {
+		$this->components = Set::merge($appVars['helpers'], $this->helpers);
+	}
+	return parent::constructClasses();
 }
 
 function _disableAll() {
