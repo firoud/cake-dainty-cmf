@@ -33,7 +33,7 @@ function constructClasses() {
 		$this->components = Set::merge(Set::normalize($appVars['components']), Set::normalize($this->components));
 	}
 	if (isset($appVars['helpers'])) {
-		$this->components = Set::merge($appVars['helpers'], $this->helpers);
+		$this->helpers = Set::merge($appVars['helpers'], $this->helpers);
 	}
 	return parent::constructClasses();
 }
