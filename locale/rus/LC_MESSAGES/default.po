@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=3; plural=(((n%10==1)&&(n%100!=11))?0:((((n%10>=2)&&(n%10<=4))&&((n%100<10)||(n%100>=20)))?1:2));\n"
+
+
+msgid "Monday"
+msgstr "Понедельник"
+
+msgid "Tuesday"
+msgstr "Вторник"
+
+msgid "Wednesday"
+msgstr "Среда"
+
+msgid "Thursday"
+msgstr "Четверг"
+
+msgid "Friday"
+msgstr "Пятница"
+
+msgid "Saturday"
+msgstr "Суббота"
+
+msgid "Sunday"
+msgstr "Воскресенье"
+
+
+msgid "January"
+msgstr "Январь"
+
+msgid "February"
+msgstr "Февраль"
+
+msgid "March"
+msgstr "Март"
+
+msgid "April"
+msgstr "Апрель"
+
+msgid "May"
+msgstr "Май"
+
+msgid "June"
+msgstr "Июнь"
+
+msgid "July"
+msgstr "Июль"
+
+msgid "August"
+msgstr "Август"
+
+msgid "September"
+msgstr "Сентябрь"
+
+msgid "October"
+msgstr "Октябрь"
+
+msgid "November"
+msgstr "Ноябрь"
+
+msgid "December"
+msgstr "Декабрь"
+
+
+msgid "%d Byte"
+msgid_plural "%d Bytes"
+msgstr[0] "%d Байт"
+msgstr[1] "%d Байта"
+msgstr[2] "%d Байт"
+
+msgid "%d KB"
+msgstr "%d КБ"
+
+msgid "%.2f MB"
+msgstr "%.2f МБ"
+
+msgid "%.2f GB"
+msgstr "%.2f ГБ"
+
+msgid "%.2f TB"
+msgstr "%.2f ТБ"
+
+
+msgid "<< first"
+msgstr "Первая"
+
+msgid "<< Previous"
+msgstr "Предыдущая"
+
+msgid "Next >>"
+msgstr "Следующая"
+
+msgid "last >>"
+msgstr "Последняя"
+
+
+msgid "Sort by"
+msgstr "Сортировать по"
