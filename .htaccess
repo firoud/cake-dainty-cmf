@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteRule ^(debug_kit|schema|admin)/(img|css|js)/(.*) plugins/$1/webroot/$2/$3 [L]
+	RewriteRule ^schema/(tiny_mce|shadowbox|flowplayer)/(.*) plugins/schema/webroot/$1/$2 [L]
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^$ webroot/ [L]
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule (.*) webroot/$1 [L]
+</IfModule>
