@@ -18,7 +18,7 @@ Configure::write('Engine.name', 'CakePHP Dainty CMF');
 Configure::write('Engine.version', '1.0.0');
 
 // firebug
-Configure::write('fb', TRUE);
+Configure::write('fb', FALSE);
 
 if (!function_exists('fb')) {
 	function fb() {
@@ -52,8 +52,15 @@ Configure::load('project');
 if (!defined('DEFAULT_LANGUAGE')) {
 	define('DEFAULT_LANGUAGE', 'rus');
 }
-if (Configure::read('Config.language') === NULL) {
+if (is_null(Configure::read('Config.language'))) {
 	Configure::write('Config.language', DEFAULT_LANGUAGE);
+}
+
+if (!defined('DEFAULT_WYSIWYG')) {
+	define('DEFAULT_WYSIWYG', 'tinymce');
+}
+if (is_null(Configure::read('Config.wysiwyg'))) {
+	Configure::write('Config.wysiwyg', DEFAULT_WYSIWYG);
 }
 
 
