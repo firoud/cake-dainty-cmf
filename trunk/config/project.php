@@ -18,13 +18,16 @@ $config['Project']['name'] = 'Unnamed Project';
 $config['Project']['version'] = '1.0.0';
 
 $config['debug'] = 2;
-//$config['log'] = TRUE;
-//$config['fb'] = TRUE;
+$config['log'] = FALSE;
+$config['fb'] = TRUE;
+
+//$config['Config']['languages'] = array('rus', 'eng', 'deu', 'fre');
 
 //define('DEFAULT_LANGUAGE', 'rus');
 //$config['Config']['language'] = DEFAULT_LANGUAGE;
 
-//$config['Config']['languages'] = array('rus', 'eng', 'deu', 'fre');
+//define('DEFAULT_WYSIWYG', 'tinymce');
+//$config['Config']['wysiwyg'] = DEFAULT_WYSIWYG;
 
 
 ?>
