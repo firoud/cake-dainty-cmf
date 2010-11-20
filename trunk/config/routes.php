@@ -16,7 +16,9 @@
 
 App::import('Lib', 'Routines.Url');
 
-include(CONFIGS . 'urls.php');
+if (is_file(CONFIGS . 'urls.php')) {
+	include(CONFIGS . 'urls.php');
+}
 
 
 ?>
