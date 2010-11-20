@@ -17,7 +17,9 @@
 Configure::write('Engine.name', 'CakePHP Dainty CMF');
 Configure::write('Engine.version', '1.0.0');
 
-// firebug
+Configure::write('Project.name', 'Unnamed Project');
+Configure::write('Project.version', '1.0.0');
+
 Configure::write('fb', FALSE);
 
 if (!function_exists('fb')) {
@@ -47,7 +49,9 @@ if (!function_exists('fb')) {
 App::import('Lib', 'Routines.Translit');
 
 // project config
-Configure::load('project');
+if (is_file(CONFIGS . 'project.php')) {
+	Configure::load('project');
+}
 
 if (!defined('DEFAULT_LANGUAGE')) {
 	define('DEFAULT_LANGUAGE', 'rus');
