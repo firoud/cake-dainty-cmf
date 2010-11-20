@@ -18,7 +18,7 @@ $config['Project']['name'] = 'Unnamed Project';
 $config['Project']['version'] = '1.0.0';
 
 $config['debug'] = 2;
-$config['log'] = FALSE;
+//$config['log'] = TRUE;
 $config['fb'] = TRUE;
 
 //$config['Config']['languages'] = array('rus', 'eng', 'deu', 'fre');
